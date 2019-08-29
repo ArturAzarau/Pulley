@@ -844,7 +844,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             drawerContentContainer.frame = CGRect(x: 0, y: drawerScrollView.bounds.height - lowestStop, width: drawerScrollView.bounds.width, height: drawerScrollView.bounds.height + bounceOverflowMargin)
             drawerBackgroundVisualEffectView?.frame = drawerContentContainer.frame
             drawerShadowView.frame = drawerContentContainer.frame
-            drawerScrollView.contentSize = CGSize(width: drawerScrollView.bounds.width, height: (drawerScrollView.bounds.height - lowestStop) + drawerScrollView.bounds.height - safeAreaBottomInset + (bounceOverflowMargin - 5.0))
+            drawerScrollView.contentSize = CGSize(width: drawerScrollView.bounds.width, height: (drawerScrollView.bounds.height - lowestStop) + drawerScrollView.bounds.height - safeAreaBottomInset)
             
             // Update rounding mask and shadows
             let borderPath = drawerMaskingPath(byRoundingCorners: [.topLeft, .topRight, .bottomLeft, .bottomRight]).cgPath

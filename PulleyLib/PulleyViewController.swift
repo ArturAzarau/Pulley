@@ -201,7 +201,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
 
     // Public
     
-    public let bounceOverflowMargin: CGFloat = 20.0
+    public let bounceOverflowMargin: CGFloat = 0
 
     /// The current content view controller (shown behind the drawer).
     public fileprivate(set) var primaryContentViewController: UIViewController! {
